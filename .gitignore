@@ -1,0 +1,6 @@
+logs/
+runs/
+__pycache__/
+checkpoint/
+*.zip
+best_model/
