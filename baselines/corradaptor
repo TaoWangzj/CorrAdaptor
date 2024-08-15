@@ -638,7 +638,7 @@ class DS_Block(nn.Module):
 
             return x_ds, y_ds, [w0, w1, w2[:, 0, :, 0]], [w0_ds, w1_ds], e_hat
 
-class CLNet(nn.Module):
+class CorrAdaptor(nn.Module):
     def __init__(self, config):
         super(CLNet, self).__init__()
 
