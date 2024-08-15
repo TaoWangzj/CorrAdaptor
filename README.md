@@ -63,7 +63,7 @@ CUDA_VISIBLE_DEVICES=0,1  python -u -m torch.distributed.launch --nproc_per_node
 CUDA_VISIBLE_DEVICES=0  python train_single_gpu.py
 ```
 
-2. Evaluation
+2. Evaluation (Download pre-trained Models from links YFCC(https://pan.baidu.com/s/1t2CdZGwun_5WO1_c-iVflw?pwd=tib6) Sun3d(https://pan.baidu.com/s/1ERkhcLn_NmOcPgI5O_X9lA?pwd=4j7u))
 ```
 python test.py
 ```
