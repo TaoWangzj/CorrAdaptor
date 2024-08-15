@@ -50,7 +50,12 @@ $CorrAdaptor
       |----yfcc-sift-2000-train.hdf5
       |----yfcc-sift-2000-val.hdf5
       |----yfcc-sift-2000-test.hdf5
-      ...
+      |----sun3d-sift-2000-train.hdf5
+      |----sun3d-sift-2000-val.hdf5
+      |----sun3d-sift-2000-test.hdf5
+      |----HPatches
+        |----hpatches-sequences-release
+        ...
 ```
 
 ## Training & Evaluation
