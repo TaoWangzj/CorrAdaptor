@@ -16,9 +16,9 @@ class Config(object):
         # self.data_te = '/mnt/afs/user/liuyangzhou/workspace/CorrFormer/corrdata/yfcc-sift-2000-test.hdf5'
         # self.data_tr = '/mnt/afs/user/liuyangzhou/workspace/CorrFormer/corrdata/yfcc-sift-2000-train.hdf5'
         # self.data_va = '/mnt/afs/user/liuyangzhou/workspace/CorrFormer/corrdata/yfcc-sift-2000-val.hdf5' 
-        self.data_te = '/data/sets/heyuping/OA_dump_with_image/yfcc-sift-2000-test.hdf5'
-        self.data_tr = '/data/sets/heyuping/OA_dump_with_image/yfcc-sift-2000-train.hdf5'
-        self.data_va = '/data/sets/heyuping/OA_dump_with_image/yfcc-sift-2000-test.hdf5'
+        self.data_te = 'data_dump/yfcc-sift-2000-test.hdf5'
+        self.data_tr = 'data_dump/yfcc-sift-2000-train.hdf5'
+        self.data_va = 'data_dump/yfcc-sift-2000-test.hdf5'
         # self.image_H = 120
         # self.image_W = 160
 
