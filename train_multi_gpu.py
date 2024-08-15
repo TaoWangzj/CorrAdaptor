@@ -3,7 +3,7 @@ import os
 import torch
 from datasets.CorresDataset import CorrespondencesDataset, collate_fn
 from torch.utils.data import DataLoader
-from baselines.corrformer_v5_3_node_250 import CLNet
+from baselines.corradaptor import CorrAdaptor
 import torch.optim as optim
 from utils.train_eval_utils import train_one_epoch, evaluate
 from utils.distributed_utils import init_distributed_mode, dist, cleanup
@@ -67,7 +67,7 @@ if __name__ == '__main__':
                               num_workers=conf.num_workers,
                               collate_fn=collate_fn)
 
-    model = CLNet(conf).to(device)
+    model = CorrAdaptor(conf).to(device)
 
     pg = [p for p in model.parameters() if p.requires_grad]
     optimizer = optim.Adam(pg, lr=true_lr, weight_decay=conf.weight_decay)
