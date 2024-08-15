@@ -45,7 +45,7 @@ python -m pip install -r requirements.txt
 Follow the instructions provided [here](https://github.com/zjhthu/OANet) for downloading and preprocessing datasets. 
 The packaged dataset should be put in the `data_dump/` and directory structure should be: 
 ```
-$VSFormer
+$CorrAdaptor
     |----data_dump
       |----yfcc-sift-2000-train.hdf5
       |----yfcc-sift-2000-val.hdf5
