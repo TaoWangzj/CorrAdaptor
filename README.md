@@ -23,7 +23,7 @@ This repository contains the dataset, code and pre-trained models for our paper.
 
 
 ## Network Architecture
-![](images/corradaptor.png)
+![](assets/corradaptor_framework.png)
 
 
 ## Get Started
