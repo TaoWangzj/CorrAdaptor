@@ -29,10 +29,10 @@ if __name__ == '__main__':
 
     # download pre-trained models from links in dir weights
     # for fycc
-    weights_dict = torch.load(os.path.join('./weights', 'yfcc_best.pth'), map_location="cuda")
+    weights_dict = torch.load(os.path.join('./model_zoo', 'yfcc_best.pth'), map_location="cuda")
 
     # for sun3d
-    # weights_dict = torch.load(os.path.join('./weights', 'sun3d_best.pth'), map_location="cuda")
+    # weights_dict = torch.load(os.path.join('./model_zoo', 'sun3d_best.pth'), map_location="cuda")
     
     safe_load_weights(model, weights_dict['state_dict'])
 

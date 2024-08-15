@@ -6,7 +6,7 @@ import cv2
 import torch
 from config import Config
 from utils.tools import safe_load_weights
-from baselines.mgnet import MGNet
+from baselines.corradaptor import CorrAdaptor
 
 
 def pose_auc(errors, thresholds):
@@ -136,10 +136,9 @@ class HpatchesHomogBenchmark:
 
 if __name__ == '__main__':
     conf = Config()
-    print("umatch_yfcc")
-    checkpoint = "/data/sets/liuyicheng/codes/corrformer/model_zoo/mgnet_yfcc.pth"
+    checkpoint = "/data/sets/liuyicheng/codes/corrformer/model_zoo/yfcc_best.pth"
 
-    model = MGNet().cuda()
+    model = CorrAdaptor(conf).cuda()
     weights_dict = torch.load(checkpoint, map_location="cuda:0")
     safe_load_weights(model, weights_dict['state_dict'])
     model.eval()

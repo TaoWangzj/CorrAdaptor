@@ -5,7 +5,7 @@ from datetime import datetime
 class Config(object):
 
     def __init__(self):
-        self.model = "corrformer_v5_3_node_250" # your experiment name
+        self.model = "corradaptor" # your experiment name
         self.series_type = "clnet"  # or oanet
 
         # pre_processing
