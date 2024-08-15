@@ -76,8 +76,8 @@ python test.py
 ## Citation
 If you use corradaptor, please consider citing:
 
-    @inproceedings{liao2024vsformer,
-      title={VSFormer: Visual-Spatial Fusion Transformer for Correspondence Pruning},
+    @inproceedings{zhu24corrAdaptor,
+      title={CorrAdaptor: Adaptive Local Context Learning for Correspondence Pruning},
       author={Zhu, Wei and Liu, Yicheng and He, Yuping and Liao, Tangfei and Xu, Xiaoqiu and Wang, Tao and Lu, tong},
       booktitle={Proceedings of European Conference on Artificial Intelligence},
       year={2024}
