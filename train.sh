@@ -26,6 +26,6 @@
 
 # torchrun --nnodes=${NNODES} --nproc_per_node=${GPUS} --master_port=${PORT} train_multi_gpu.py | tee ./logs/corrformer_v5_4_yfcc_v1.txt
 
-torchrun --nnodes=1 --nproc_per_node=8 --master_port=29990 train_multi_gpu.py | tee ./logs/corrformer_v5_3.txt
+torchrun --nnodes=1 --nproc_per_node=8 --master_port=29990 train_multi_gpu.py | tee ./logs/corradaptor.txt
 
 # s8a bash /mnt/afs/user/liuyangzhou/workspace/CorrFormer/corrformer/train.sh
