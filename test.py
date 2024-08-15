@@ -3,7 +3,7 @@ from config import Config
 import os
 from datasets.CorresDataset import CorrespondencesDataset, collate_fn
 from torch.utils.data import DataLoader
-from baselines.corrformer_v5_3_node_250 import CLNet
+from baselines.corradaptor import CorrAdaptor
 from utils.train_eval_utils import evaluate
 from utils.tools import safe_load_weights
 
@@ -23,7 +23,7 @@ if __name__ == '__main__':
                              num_workers=10,
                              collate_fn=collate_fn)
     
-    model = CLNet(conf).cuda()
+    model = CorrAdaptor(conf).cuda()
     param_count = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print("Model has {} parameters".format(param_count))
 
